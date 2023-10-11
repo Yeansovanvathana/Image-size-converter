@@ -8,9 +8,8 @@ function App() {
       <h2 style={{ padding: "5px", margin: "10px 20px" }}>
         Image size converter
       </h2>
-      <input type="file" />
       {/* <MyDropzone /> */}
-      {/* <ImageResizer /> */}
+      <ImageResizer />
     </div>
   );
 }
