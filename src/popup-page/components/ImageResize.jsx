@@ -97,26 +97,32 @@ const ImageResizer = () => {
 
       <ImagePreview image={image} />
       <div className="item-container">
-        <div className="item">
-          <label className="item-label">Width</label>
+        <div class="form-group">
+          <label for="phone" class="block-label">
+            Width
+          </label>
           <input
-            className="item-input"
             type="number"
             value={width}
             onChange={(e) => setWidth(e.target.value)}
+            class="input-field"
           />
         </div>
-        <div className="item">
-          <label className="item-label">Height</label>
+        <div class="form-group">
+          <label for="phone" class="block-label">
+            Height
+          </label>
           <input
-            className="item-input"
+            class="input-field"
             type="number"
             value={height}
             onChange={(e) => setHeight(e.target.value)}
           />
         </div>
       </div>
-      <button onClick={handleResize}>Convert</button>
+      <div className="flex-center">
+        <button onClick={handleResize}>Convert</button>
+      </div>
     </div>
   );
 };
